@@ -408,7 +408,7 @@ function get_api_data( $input ) {
 						</ul>
 						<h3>Example return:</h3>
 						<p>
-							<code>{ "initNum": 3.1, "initUnit": "mi", "returnNum": 4.98895, "returnUnit": "km", "string": "3.1 miles converts to 4.98895 kilometers" }</code>
+							<code>{"initNum":3.1,"initUnit":"mi","returnNum":4.98895,"returnUnit":"km","string":"3.1 miles converts to 4.98895 kilometers"}</code>
 						</p>
 					</div>
 
