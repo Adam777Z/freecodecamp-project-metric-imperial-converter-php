@@ -387,15 +387,16 @@ function get_api_data( $input ) {
 					<div id="user-stories">
 						<h3>User Stories:</h3>
 						<ol>
-							<li>I can <b>GET</b> <code>/api/convert</code> with a single parameter containing an accepted number and unit and have it converted. Hint: Split the input by looking for the index of the first character which will mark the start of the unit.</li>
+							<li>I can <b>GET</b> <code>/api/convert</code> with a single parameter containing an accepted number and unit and have it converted.<br>
+								Hint: Split the input by looking for the index of the first character which will mark the start of the unit.</li>
 							<li>I can convert 'gal' to 'l' and vice versa. <b>(1 gal to 3.78541 l)</b></li>
 							<li>I can convert 'lbs' to 'kg' and vice versa. <b>(1 lbs to 0.45359 kg)</b></li>
 							<li>I can convert 'mi' to 'km' and vice versa. <b>(1 mi to 1.60934 km)</b></li>
 							<li>If my number is invalid, returned will be 'invalid number'.</li>
 							<li>If my unit of measurement is invalid, returned will be 'invalid unit'.</li>
 							<li>If both are invalid, returned will be 'invalid number and unit'.</li>
-							<li>I can use fractions, decimals or both in my parameter (for example: 5, 1/2, 2.5/6), but if nothing is provided it will default to 1.</li>
-							<li>Returned will consist of the initNum, initUnit, returnNum, returnUnit, and string spelling out units in format <code>{initNum} {initial_Units} converts to {returnNum} {return_Units}</code> with the result rounded to 5 decimals.</li>
+							<li>I can use fractions, decimals or both in my parameter (for example: 5, 1/2, 2.5/6), but if nothing is provided it will default to 1 (initial number).</li>
+							<li>Returned will consist of the initNum, initUnit, returnNum, returnUnit, and string spelling out units in format <code>{initNum} {initUnit} converts to {returnNum} {returnUnit}</code> with the result rounded to 5 decimals.</li>
 							<li>All 21 <a href="<?php echo $path_prefix; ?>api/test" target="_blank">tests</a> are complete and passing.</li>
 						</ol>
 						<h3>Example usage:</h3>
